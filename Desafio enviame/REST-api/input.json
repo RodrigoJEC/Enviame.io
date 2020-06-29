@@ -1,0 +1,33 @@
+{
+	"shipping_order": {
+		"imported_id": 5623628920875,
+		"order_price": "611.00",
+		"n_packages": "1",
+		"content_description": "Ergonomic Frozen Towels",
+		"type": "delivery",
+		"weight": 15,
+		"volume": 35
+	},
+	"shipping_destination": {
+		"customer": {
+			"name": "Carlos Maestas",
+			"phone": "932 240 366",
+			"email": "Soledad.Sierra50@gmail.com"
+		},
+		"delivery_address": {
+			"home_address": {
+				"place": "Providencia",
+				"full_address": "784 Adán Ramal",
+				"information": ""
+			}
+		}
+	},
+	"shipping_origin": {
+		"warehouse_code": "cod_bod"
+	},
+	"carrier": {
+		"carrier_code": "CCH",
+		"carrier_service": "free",
+		"tracking_number": ""
+	}
+}
