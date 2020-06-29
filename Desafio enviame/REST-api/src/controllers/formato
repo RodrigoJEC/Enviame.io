@@ -1,0 +1,63 @@
+{
+	"info": {
+		"_postman_id": "c227d9bc-1cd9-4423-a51e-307d5cffb003",
+		"name": "Desafio",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Crear envio empresa Copy",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					},
+					{
+						"key": "Accept",
+						"type": "text",
+						"value": "application/json"
+					},
+					{
+						"key": "api-key",
+						"type": "text",
+						"value": "798171c39baf6fd212aaacacc5793b8e"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t    \"shipping_order\":{\n        \"imported_id\":\"123123\",\n        \"order_price\":\"100\",\n        \"n_packages\":\"1\",\n        \"content_description\":\"Prendas de vestir\",\n        \"type\":\"delivery\",\n        \"weight\":\"\",\n        \"volume\":\"1\"\n    },\n    \"shipping_destination\":{\n        \"customer\":{\n            \"name\":\"Jonh Doe\",\n            \"phone\":\"569123456789\",\n            \"email\":\"correo@mail.com\"\n        },\n        \"delivery_address\":{\n            \"home_address\":{\n                \"place\":\"Providencia\",\n                \"full_address\":\"Luis Thayer ojeda 0127\",\n                \"information\":\"\"\n            }\n        }\n    },\n    \"shipping_origin\":{\n        \"warehouse_code\":\"cod_bod\"\n    },\n    \"carrier\":{\n        \"carrier_code\":\"CCH\",\n        \"carrier_service\":\"normal\",\n        \"tracking_number\":\"\"\n    }\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://stage.api.enviame.io/api/s2/v2/companies/620/deliveries",
+					"protocol": "https",
+					"host": [
+						"stage",
+						"api",
+						"enviame",
+						"io"
+					],
+					"path": [
+						"api",
+						"s2",
+						"v2",
+						"companies",
+						"620",
+						"deliveries"
+					]
+				},
+				"description": "Endpoint de creación de envíos, en la url se debe indicar el marketplace,seller que creará el envio y se debe usar el api-key del marketplace."
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}
