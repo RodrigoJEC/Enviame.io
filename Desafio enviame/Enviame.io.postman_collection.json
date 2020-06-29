@@ -1,0 +1,298 @@
+{
+	"id": "cb025829-55e6-a0e3-c9e6-ba4f8090d1cd",
+	"name": "Enviame.io",
+	"description": "",
+	"order": [
+		"a9b02301-cf39-75fc-8033-2b10f5cb8522",
+		"eda72d3c-2265-65b3-ee41-f82ec3f90b02",
+		"03b905d3-6df8-80ab-3cdb-50e4c2eca737",
+		"5917bb97-fa3d-f0c0-35a2-c7c915090b5a",
+		"a84e88c7-cafb-c2f5-97e1-b05172f0cdf3",
+		"1308592c-c3ec-f746-c866-ccb5ab7f0d98",
+		"21a8e6b5-8649-0b57-f8d0-f069aca37968"
+	],
+	"folders": [],
+	"folders_order": [],
+	"timestamp": 1593039334256,
+	"owner": "11842151",
+	"public": false,
+	"requests": [
+		{
+			"id": "03b905d3-6df8-80ab-3cdb-50e4c2eca737",
+			"headers": "",
+			"headerData": [],
+			"url": "http://localhost:4000/envios/",
+			"queryParams": [],
+			"pathVariables": {},
+			"pathVariableData": [],
+			"preRequestScript": null,
+			"method": "GET",
+			"collectionId": "cb025829-55e6-a0e3-c9e6-ba4f8090d1cd",
+			"data": [],
+			"dataMode": "params",
+			"name": "Buscar",
+			"description": "busca el envio con el id correspondiente al id ingresado en la ruta",
+			"descriptionFormat": "html",
+			"time": 1593380031091,
+			"version": 2,
+			"responses": [],
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {}
+		},
+		{
+			"id": "1308592c-c3ec-f746-c866-ccb5ab7f0d98",
+			"headers": "Content-Type: application/x-www-form-urlencoded\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/x-www-form-urlencoded",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://localhost:4000/envios/4",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "PUT",
+			"data": [
+				{
+					"key": "imported_id",
+					"value": "",
+					"description": "Número referencia debe ser menor o igual a 24 dígitos y no vacío",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "price",
+					"value": "",
+					"description": "valor ",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "n_paquete",
+					"value": "1",
+					"description": "numerp de vultos, de preferancia 1",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "description",
+					"value": "",
+					"description": "Descripcion del contenido",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "peso",
+					"value": "",
+					"description": "Peso del paquete",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "volumen",
+					"value": "",
+					"description": "Volumen del paquete",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "name",
+					"value": "Rodrigo Echeverria",
+					"description": "Nombre",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "phone",
+					"value": "978941102",
+					"description": "Numero telefonico",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "email",
+					"value": "rodrigo@gmai.com",
+					"description": "Correo o email",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "locacion",
+					"value": "Providencia",
+					"description": "Origen",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "address",
+					"value": "el regador 1542",
+					"description": "Direccion",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "inf",
+					"value": "??",
+					"description": "informacion direccion",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "ware_code",
+					"value": "cod_bod",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "carr_code",
+					"value": "CCH",
+					"description": "Codeigo de Carrier",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "service",
+					"value": "normal",
+					"description": "Tipo de envio (Free; normal, express)",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "tra_num",
+					"value": "",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "urlencoded",
+			"version": 2,
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1593398225245,
+			"name": "Modificar registro",
+			"description": "Edita el registro correspoondiente al id seleccionado",
+			"collectionId": "cb025829-55e6-a0e3-c9e6-ba4f8090d1cd",
+			"responses": []
+		},
+		{
+			"id": "21a8e6b5-8649-0b57-f8d0-f069aca37968",
+			"headers": "",
+			"headerData": [],
+			"url": "http://localhost:4000/distancia",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "PUT",
+			"data": [],
+			"dataMode": "params",
+			"version": 2,
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1593428274434,
+			"name": "Distancia",
+			"description": "Agrega automaticamente un valor entre 0 y 2000 a la variable dsitancia de todos los registros",
+			"collectionId": "cb025829-55e6-a0e3-c9e6-ba4f8090d1cd",
+			"responses": []
+		},
+		{
+			"id": "5917bb97-fa3d-f0c0-35a2-c7c915090b5a",
+			"headers": "",
+			"headerData": [],
+			"url": "http://localhost:4000/tiempo",
+			"queryParams": [],
+			"pathVariables": {},
+			"pathVariableData": [],
+			"preRequestScript": null,
+			"method": "GET",
+			"collectionId": "cb025829-55e6-a0e3-c9e6-ba4f8090d1cd",
+			"data": [],
+			"dataMode": "params",
+			"name": "Tiempo entrega",
+			"description": "Calcula el tiempo de entrega segun la distancia",
+			"descriptionFormat": "html",
+			"time": 1593429139939,
+			"version": 2,
+			"responses": [],
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {}
+		},
+		{
+			"id": "a84e88c7-cafb-c2f5-97e1-b05172f0cdf3",
+			"headers": "",
+			"headerData": [],
+			"url": "http://localhost:4000/delete/",
+			"queryParams": [],
+			"pathVariables": {},
+			"pathVariableData": [],
+			"preRequestScript": null,
+			"method": "DELETE",
+			"collectionId": "cb025829-55e6-a0e3-c9e6-ba4f8090d1cd",
+			"data": [],
+			"dataMode": "params",
+			"name": "Borrar",
+			"description": "Borra el invio con el id correspondiente al id ingresado en la ruta",
+			"descriptionFormat": "html",
+			"time": 1593379964686,
+			"version": 2,
+			"responses": [],
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {}
+		},
+		{
+			"id": "a9b02301-cf39-75fc-8033-2b10f5cb8522",
+			"headers": "",
+			"headerData": [],
+			"url": "http://localhost:4000/guardar",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "POST",
+			"data": [],
+			"dataMode": "params",
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1593379815939,
+			"name": "Generar",
+			"description": "Genera 10 registros aleatoroios",
+			"collectionId": "cb025829-55e6-a0e3-c9e6-ba4f8090d1cd",
+			"responses": []
+		},
+		{
+			"id": "eda72d3c-2265-65b3-ee41-f82ec3f90b02",
+			"headers": "",
+			"headerData": [],
+			"url": "http://localhost:4000/envios",
+			"queryParams": [],
+			"pathVariables": {},
+			"pathVariableData": [],
+			"preRequestScript": null,
+			"method": "GET",
+			"collectionId": "cb025829-55e6-a0e3-c9e6-ba4f8090d1cd",
+			"data": [],
+			"dataMode": "params",
+			"name": "Listar envios",
+			"description": "entrega lista completa de todos los envios",
+			"descriptionFormat": "html",
+			"time": 1593379875743,
+			"version": 2,
+			"responses": [],
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {}
+		}
+	]
+}
